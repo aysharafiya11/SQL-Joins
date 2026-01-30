@@ -115,7 +115,7 @@ where o.OrderID is NULL;
 -- Question 7. Generate a list of all possible combinations between Customers and Orders.
 SELECT c.CustomerID, c.CustomerName, c.City, o.OrderID, o.OrderDate, o.Amount
 FROM Customers as c
-CROSS JOIN Orders as o;
+JOIN Orders as o;
 
 
 -- Question 8. Show all customers along with order and payment amounts in one table.
